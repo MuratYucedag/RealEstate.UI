@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("RealEstate.DataAccessLayer")]
+[assembly: AssemblyTitle("RealEstate.FacadeLayer")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("RealEstate.DataAccessLayer")]
+[assembly: AssemblyProduct("RealEstate.FacadeLayer")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("6852172b-7f40-44b3-a753-a37e671b311c")]
+[assembly: Guid("b3f62d51-0730-4036-8ef0-6eaeb7a674ac")]
 
 // Version information for an assembly consists of the following four values:
 //

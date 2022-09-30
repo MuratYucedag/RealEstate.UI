@@ -1,4 +1,5 @@
-﻿using RealEstate.DataAccessLayer.ConnectionUrl;
+﻿using RealEstate.BusinessLayer.Validation;
+using RealEstate.EntityLayer.Entities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,10 +21,36 @@ namespace RealEstate.UI
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            SQLConnectionUrl s = new SQLConnectionUrl();
-            //label1.Text = s.ConnectionURL();
-            s.ConnectionURL();
-            s.sayi1 = 20;
+           // kisiler k = new kisiler();
+            // k.liste();
+           // label1.Text = k.toplam().;
+        }
+
+        private void btnList_Click(object sender, EventArgs e)
+        {
+            List<Category> values = BLCategory.BLCategoryList();
+            dataGridView1.DataSource = values;
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            Category category = new Category();
+            category.CategoryName = txtName.Text;
+            BLCategory.BLCategoryAdd(category);
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(txtID.Text);
+            BLCategory.BLCategoryDelete(id);
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            Category category = new Category();
+            category.CategoryID = int.Parse(txtID.Text);
+            category.CategoryName = txtName.Text;
+            BLCategory.BLCategoryUpdate(category);
         }
     }
 }
