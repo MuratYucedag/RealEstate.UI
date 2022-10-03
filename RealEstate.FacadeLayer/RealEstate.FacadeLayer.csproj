@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Connection\DbConnection.cs" />
     <Compile Include="DAL\DALCategory.cs" />
+    <Compile Include="DAL\DALEmployee.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

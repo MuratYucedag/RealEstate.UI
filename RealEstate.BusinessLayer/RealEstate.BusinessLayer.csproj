@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Validation\BLCategory.cs" />
+    <Compile Include="Validation\BLEmployee.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RealEstate.EntityLayer\RealEstate.EntityLayer.csproj">
